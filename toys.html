@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toy Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .toy-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .toy-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 220px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .toy-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        .toy-item img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+        .toy-name {
+            font-size: 1.1em;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .toy-description {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+            min-height: 40px;
+        }
+        .toy-price {
+            font-weight: bold;
+            color: #ff6f61;
+            font-size: 1.2em;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            .toy-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .toy-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FunTime Toys</h1>
+        <p>Your favorite place for toys and fun!</p>
+    </header>
+
+    <div class="container">
+        <div class="toy-list">
+            <div class="toy-item">
+                <img src="https://images.unsplash.com/photo-1587339140149-f39f7e5c7a9f?auto=format&fit=crop&w=220&q=80" alt="Teddy Bear" />
+                <div class="toy-name">Cuddly Teddy Bear</div>
+                <div class="toy-description">Soft and huggable teddy bear for kids of all ages.</div>
+                <div class="toy-price">$19.99</div>
+            </div>
+
+            <div class="toy-item">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=220&q=80" alt="Building Blocks" />
+                <div class="toy-name">Colorful Building Blocks</div>
+                <div class="toy-description">Encourage creativity with these vibrant blocks.</div>
+                <div class="toy-price">$29.99</div>
+            </div>
+
+            <div class="toy-item">
+                <img src="https://images.unsplash.com/photo-1526403226900-76f12fcd365d?auto=format&fit=crop&w=220&q=80" alt="Toy Car" />
+                <div class="toy-name">Racing Toy Car</div>
+                <div class="toy-description">Fast and sleek, perfect for race enthusiasts.</div>
+                <div class="toy-price">$15.99</div>
+            </div>
+
+            <div class="toy-item">
+                <img src="https://images.unsplash.com/photo-1562530294-d6de2765e484?auto=format&fit=crop&w=220&q=80" alt="Puzzle" />
+                <div class="toy-name">Fun Puzzle Game</div>
+                <div class="toy-description">Challenge your mind with this 500-piece puzzle.</div>
+                <div class="toy-price">$12.99</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 FunTime Toys. All rights reserved.
+    </footer>
+</body>
+</html>
